@@ -81,6 +81,13 @@ Again there are tons of techniques available to determine the original entry poi
 
 “Browsing” the code manually to find the OEP of well-known compilers. For example, the first API call of the Microsoft Visual C++ version 6 compiler is the “GetVersion” API call, therefore we can try to find it manually by browsing the code. Here below is a example of how the pattern looks like in OllyDbg for this particular compiler.
 
+<figure>
+<img src="/assets/posts/binary-unpacking-techniques/ollydbg-getversion.png" alt="OllyDbg">
+<figcaption>OllyDbg KERNEL32.GetVersion</figcaption>
+</figure>
+
+Without knowing patterns from compilers, visually browsing the code can still be effective to retrieve the original entry point. For example, when we open the “unpackme_UPX” in a debugger such as x32/x64dbg or OllyDbg binary and scroll down a bit we can observe a “final” jump like in the screenshot below. This is called a “tail jump” which is referring to the moment where the stub is transferring the execution to the OEP.
+
 
 ##### Resources
 
