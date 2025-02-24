@@ -42,7 +42,7 @@ Now we are given a window with some options to choose from in order to set a spe
 
 We are specifying that the execution is stopping as soon as a `WM_LBUTTONUP` (left mouse click is up) message is sent to our button control. Right after our breakpoint is set we click the button in the crackme and soon after that we step in our breakpoint.
 
-At this point we achieved what we wanted. We just stopped the execution right after the button click, on the other hand we are in `user32.dll` and our purpose is to be in the main module code. Getting there is as simple as just using a breakpoint in the code section of our executable. You can also use the `Run to user code` option (Ctrl+F9).
+At this point we achieved what we wanted. We just stopped the execution right after the button click, on the other hand we are in `user32.dll` and our purpose is to be in the main module code. Getting there is as simple as just using a breakpoint in the code section of our executable. You can also use the `Run to user code` option (<kbd>Ctrl</kbd>+<kbd>F9</kbd>).
 
 <figure>
 <img src="/assets/posts/messages-breakpoints-in-x64dbg/code-section-bp.png" alt="x64dbg">
@@ -58,7 +58,7 @@ When trying to resume the execution, the debugger is going to stop the execution
 
 # Event-driven programming
 
-If you are a programmer, or have been in contact with programming languages in general and coding tasks, you should know the concept of the so called event-driven programming. Event-driven programming is a programming paradigm in which the stream of a program execution is dictated by events; a user action, a mouse click, a key press, etc. An event-driven application is intended to identify events as they happen, and afterwards manage them, utilizing a suitable event-handling procedure. Some programming languages are particularly intended to encourage event-driven programming, and give an IDE that halfway computerizes the generation of code, and gives an extensive choice of inherent built-in objects and controls, Visual Basic, Borland Delphi/CBuilder, C#, Java, etc are some of these types of languages. (1)
+If you are a programmer, or have been in contact with programming languages in general and coding tasks, you should know the concept of the so called event-driven programming. Event-driven programming is a programming paradigm in which the stream of a program execution is dictated by events; a user action, a mouse click, a key press, etc. An event-driven application is intended to identify events as they happen, and afterwards manage them, utilizing a suitable event-handling procedure. Some programming languages are particularly intended to encourage event-driven programming, and give an IDE that halfway computerizes the generation of code, and gives an extensive choice of inherent built-in objects and controls, Visual Basic, Borland Delphi/CBuilder, C#, Java, etc are some of these types of languages. <sup id="one">[[1]](#one-ref)</sup>
 
 # Window Messages
 
@@ -68,7 +68,7 @@ Even if a programmer is not using one of the above languages or even if they are
 
 > The system sends a message to a window procedure with a set of four parameters: a window handle, a message identifier, and two values called message parameters. The window handle identifies the window for which the message is intended. The system uses it to determine which window procedure should receive the message.
 
-> A message identifier is a named constant that identifies the purpose of a message. When a window procedure receives a message, it uses a message identifier to determine how to process the message. (2)
+> A message identifier is a named constant that identifies the purpose of a message. When a window procedure receives a message, it uses a message identifier to determine how to process the message. <sup id="two">[[2]](#two-ref)</sup>
 
 # Window Procedures
 
@@ -212,6 +212,6 @@ ThunderCls signing out
 
 ##### References
 
-* [Event-driven Programming](https://www.technologyuk.net/software-development/software-development-tools/event-driven-programming.shtml)
-* [About Messages and Message Queues](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-messages-and-message-queues?redirectedfrom=MSDN)
+* <small id="one-ref">[[1]](#one)</small>: [Event-driven Programming](https://www.technologyuk.net/software-development/software-development-tools/event-driven-programming.shtml)
+* <small id="two-ref">[[2]](#two)</small>: [About Messages and Message Queues](https://learn.microsoft.com/en-us/windows/win32/winmsg/about-messages-and-message-queues?redirectedfrom=MSDN)
 
