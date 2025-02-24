@@ -30,9 +30,9 @@ Here is a visual representation of the high-level process of unpacking to better
 
 Of course, we also need to understand the Portable Executable (PE) file format, but for that I recommend you to go through the following:
 * [Microsoft - PE Format](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format)
-* [CBJ-2005-74.pdf](/assets/pe/CBJ-2005-74.pdf)
-* [Corkami - PE101](/assets/pe/pe101.pdf)
-* [Corkami - PE102](/assets/pe/pe102.pdf)
+* [CBJ-2005-74.pdf](/assets/posts/pe-binary-format/CBJ-2005-74.pdf)
+* [Corkami - PE101](/assets/posts/pe-binary-format/pe101.pdf)
+* [Corkami - PE102](/assets/posts/pe-binary-format/pe102.pdf)
 
 Next, we’re going to see how to unpack a binary. I’m not going to cover cases where you can use generic unpacker software or the “official” unpacker of the packed binary.
 
