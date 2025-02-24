@@ -24,7 +24,7 @@ Therefore, packing has both malicious and legitimate use cases, that’s why you
 Here is a visual representation of the high-level process of unpacking to better understand the concept. Note that the packed file is also called “stub”.
 
 <figure>
-<img src="/binary-unpacking-techniques/stub.png" alt="Stub">
+<img src="/assets/posts/binary-unpacking-techniques/stub.png" alt="Stub">
 <figcaption>unpacking stub</figcaption>
 </figure>
 
@@ -45,14 +45,14 @@ Now that we know what is a packed binary, we need to understand how can we ident
 First, reading the section names can gives us indication about the packed file (see the following screenshot from PE Studio, where we can see the sections named UPX0 and UPX1). Be careful as section names can be manually overwritten into something “normal” or even tricking you into thinking it’s UPX when it’s not.
 
 <figure>
-<img src="/binary-unpacking-techniques/pestudio-sections.png" alt="pestudio">
+<img src="/assets/posts/binary-unpacking-techniques/pestudio-sections.png" alt="pestudio">
 <figcaption>pestudio sections</figcaption>
 </figure>
 
 We can also use tools such as CFF Explorer or PEiD that will try to automatically determine what kind of packed file we are facing. Below we can see that CFF Explorer found that the file has been packed with UPX v3.0.
 
 <figure>
-<img src="/binary-unpacking-techniques/cffexplorer-sections.png" alt="CFF Explorer">
+<img src="/assets/posts/binary-unpacking-techniques/cffexplorer-sections.png" alt="CFF Explorer">
 <figcaption>CFF Explorer sections</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ We can also use tools such as CFF Explorer or PEiD that will try to automaticall
 Another good technique to determine if the file is packed, is to have a look at the import table, which should be relatively small as it only uses functions to “decrypt” or unpack the original file. Here after, we can see the import table of a UPX packed file shown in PE Studio, which is quite short.
 
 <figure>
-<img src="/binary-unpacking-techniques/pestudio-import-table.png" alt="pestudio">
+<img src="/assets/posts/binary-unpacking-techniques/pestudio-import-table.png" alt="pestudio">
 <figcaption>pestudio import table</figcaption>
 </figure>
 
