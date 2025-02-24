@@ -1,2 +1,2 @@
 # AjdihA2
-[ajdiha2.github.io](ajdiha2.github.io)
+[https://ajdiha2.github.io](https//ajdiha2.github.io)
