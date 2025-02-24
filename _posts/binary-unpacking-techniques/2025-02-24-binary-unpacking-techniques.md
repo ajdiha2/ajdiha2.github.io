@@ -42,7 +42,7 @@ Now that we know what is a packed binary, we need to understand how can we ident
 
 ## PE Sections
 
-First, reading the section names can gives us indication about the packed file (see the following screenshot from PE Studio, where we can see the sections named UPX0 and UPX1). Be careful as section names can be manually overwritten into something “normal” or even tricking you into thinking it’s UPX when it’s not.
+First, reading the section names can gives us indication about the packed file (see the following screenshot from `PE Studio`, where we can see the sections named UPX0 and UPX1). Be careful as section names can be manually overwritten into something “normal” or even tricking you into thinking it’s UPX when it’s not.
 
 <figure>
 <img src="/assets/posts/binary-unpacking-techniques/pestudio-sections.png" alt="pestudio">
@@ -58,7 +58,7 @@ We can also use tools such as CFF Explorer or PEiD that will try to automaticall
 
 ## Import Table
 
-Another good technique to determine if the file is packed, is to have a look at the import table, which should be relatively small as it only uses functions to “decrypt” or unpack the original file. Here after, we can see the import table of a UPX packed file shown in PE Studio, which is quite short.
+Another good technique to determine if the file is packed, is to have a look at the import table, which should be relatively small as it only uses functions to “decrypt” or unpack the original file. Here after, we can see the import table of a UPX packed file shown in `PE Studio`, which is quite short.
 
 <figure>
 <img src="/assets/posts/binary-unpacking-techniques/pestudio-import-table.png" alt="pestudio">
@@ -198,7 +198,7 @@ You will see a log message saying “Import Rebuild success”. Now you can run 
 You can also use tools such as Import REConstructor as sometimes plugins can fail to fix the import table.
 
 # Final analysis
-After unpacking, we can re-analyze our binary in PE Studio. We can immediately see that the import table is much bigger than initially, thus giving us some quick hints on what the binary will be doing. The strings tab has also more results populated, etc.
+After unpacking, we can re-analyze our binary in `PE Studio`. We can immediately see that the import table is much bigger than initially, thus giving us some quick hints on what the binary will be doing. The strings tab has also more results populated, etc.
 
 <figure>
 <img src="/assets/posts/binary-unpacking-techniques/pestudio-complete-import-table.png" alt="Debugger">
