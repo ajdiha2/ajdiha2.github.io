@@ -5,6 +5,7 @@ layout: page
 comments: false
 ---
 
-- **[Twitter](https://twitter.com/persiawarrior)**
-- **[Github](https://github.com/ajdiha2)**
+- **[www](https://ajdiha2.ir)**
+- **[twitter](https://twitter.com/persiawarrior)**
+- **[github](https://github.com/ajdiha2)**
 
